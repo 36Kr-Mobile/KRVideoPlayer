@@ -17,22 +17,11 @@
 
 @implementation FirstViewController
 
-- (KRVideoPlayerController *)videoController
-{
-    if (!_videoController) {
-        CGFloat width = [UIScreen mainScreen].bounds.size.width;
-        _videoController = [[KRVideoPlayerController alloc] initWithFrame:CGRectMake(0, 0, width, width*(9.0/16.0))];
-        __weak typeof(self)weakSelf = self;
-        [_videoController setDimissCompleteBlock:^{
-            weakSelf.videoController = nil;
-        }];
-    }
-    return _videoController;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,14 +31,28 @@
 
 - (IBAction)playLocalVideo:(id)sender
 {
-    self.videoController.contentURL = [[NSBundle mainBundle] URLForResource:@"150511_JiveBike" withExtension:@"mov"];
-    [self.videoController showInWindow];
+    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"150511_JiveBike" withExtension:@"mov"];
+    [self playVideoWithURL:videoURL];
 }
 
 - (IBAction)playRemoteVideo:(id)sender
 {
-//    self.videoController.contentURL = [[NSBundle mainBundle] URLForResource:@"paper" withExtension:@"mov"];
-//    [self.videoController showInWindow];
+    NSURL *videoURL = [NSURL URLWithString:@"http://krtv.qiniudn.com/150522nextapp"];
+    [self playVideoWithURL:videoURL];
+}
+
+- (void)playVideoWithURL:(NSURL *)url
+{
+    if (!self.videoController) {
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        self.videoController = [[KRVideoPlayerController alloc] initWithFrame:CGRectMake(0, 0, width, width*(9.0/16.0))];
+        __weak typeof(self)weakSelf = self;
+        [self.videoController setDimissCompleteBlock:^{
+            weakSelf.videoController = nil;
+        }];
+        [self.videoController showInWindow];
+    }
+    self.videoController.contentURL = url;
 }
 
 @end
