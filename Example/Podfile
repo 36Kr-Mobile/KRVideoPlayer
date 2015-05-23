@@ -4,8 +4,3 @@ target 'KRVideoPlayer', :exclusive => true do
   pod "KRVideoPlayer", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
-  pod "KRVideoPlayer", :path => "../"
-
-  
-end

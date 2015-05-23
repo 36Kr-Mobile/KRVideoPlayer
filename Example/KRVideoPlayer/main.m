@@ -2,17 +2,15 @@
 //  main.m
 //  KRVideoPlayer
 //
-//  Created by aidenluo on 05/23/2015.
-//  Copyright (c) 2014 aidenluo. All rights reserved.
+//  Created by aidenluo on 5/23/15.
+//  Copyright (c) 2015 36kr. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-#import "KRAppDelegate.h"
-
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([KRAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

@@ -7,180 +7,162 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
-		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* KRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* KRAppDelegate.m */; };
-		6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
-		6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A2195388D20070C39A /* Main_iPad.storyboard */; };
-		6003F5A7195388D20070C39A /* KRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* KRViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
-		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6E814FF5F3414F0C55A86359 /* libPods-KRVideoPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A138389850790B704CE2148 /* libPods-KRVideoPlayer.a */; };
+		BCA862881B10AD3200BD22DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA862871B10AD3200BD22DA /* main.m */; };
+		BCA8628B1B10AD3200BD22DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA8628A1B10AD3200BD22DA /* AppDelegate.m */; };
+		BCA8628E1B10AD3200BD22DA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA8628D1B10AD3200BD22DA /* FirstViewController.m */; };
+		BCA862911B10AD3200BD22DA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA862901B10AD3200BD22DA /* SecondViewController.m */; };
+		BCA862941B10AD3200BD22DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA862921B10AD3200BD22DA /* Main.storyboard */; };
+		BCA862961B10AD3200BD22DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA862951B10AD3200BD22DA /* Images.xcassets */; };
+		BCA862991B10AD3200BD22DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA862971B10AD3200BD22DA /* LaunchScreen.xib */; };
+		BCA862A51B10AD3200BD22DA /* KRVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA862A41B10AD3200BD22DA /* KRVideoPlayerTests.m */; };
+		BCA862B11B10B5E400BD22DA /* 150511_JiveBike.mov in Resources */ = {isa = PBXBuildFile; fileRef = BCA862B01B10B5E400BD22DA /* 150511_JiveBike.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+		BCA8629F1B10AD3200BD22DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			containerPortal = BCA8627A1B10AD3200BD22DA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteGlobalIDString = BCA862811B10AD3200BD22DA;
 			remoteInfo = KRVideoPlayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6003F58A195388D20070C39A /* KRVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* KRVideoPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KRVideoPlayer-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* KRVideoPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRVideoPlayer-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* KRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* KRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6003F5A3195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* KRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* KRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		609A4FD0C3EA034752EC92A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		72F8942C7075D5F5FB774439 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9ECD9D2BA9339F771217E9FB /* KRVideoPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = KRVideoPlayer.podspec; path = ../KRVideoPlayer.podspec; sourceTree = "<group>"; };
+		5A138389850790B704CE2148 /* libPods-KRVideoPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KRVideoPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5327FC750A6111E57068D1 /* Pods-KRVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRVideoPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-KRVideoPlayer/Pods-KRVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		BCA862821B10AD3200BD22DA /* KRVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA862861B10AD3200BD22DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA862871B10AD3200BD22DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCA862891B10AD3200BD22DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCA8628A1B10AD3200BD22DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCA8628C1B10AD3200BD22DA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BCA8628D1B10AD3200BD22DA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BCA8628F1B10AD3200BD22DA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BCA862901B10AD3200BD22DA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BCA862931B10AD3200BD22DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCA862951B10AD3200BD22DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCA862981B10AD3200BD22DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BCA8629E1B10AD3200BD22DA /* KRVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA862A31B10AD3200BD22DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA862A41B10AD3200BD22DA /* KRVideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerTests.m; sourceTree = "<group>"; };
+		BCA862B01B10B5E400BD22DA /* 150511_JiveBike.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 150511_JiveBike.mov; sourceTree = "<group>"; };
+		D109D543FF0ECF3DF7461A5E /* Pods-KRVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRVideoPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KRVideoPlayer/Pods-KRVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6003F587195388D20070C39A /* Frameworks */ = {
+		BCA8627F1B10AD3200BD22DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				6E814FF5F3414F0C55A86359 /* libPods-KRVideoPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AB195388D20070C39A /* Frameworks */ = {
+		BCA8629B1B10AD3200BD22DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
-				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6003F581195388D10070C39A = {
+		1799647DF909AB82D44C7418 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* KRVideoPlayer */,
-				6003F5B5195388D20070C39A /* Tests */,
-				6003F58C195388D20070C39A /* Frameworks */,
-				6003F58B195388D20070C39A /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		6003F58B195388D20070C39A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6003F58A195388D20070C39A /* KRVideoPlayer.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6003F58C195388D20070C39A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6003F58D195388D20070C39A /* Foundation.framework */,
-				6003F58F195388D20070C39A /* CoreGraphics.framework */,
-				6003F591195388D20070C39A /* UIKit.framework */,
-				6003F5AF195388D20070C39A /* XCTest.framework */,
+				5A138389850790B704CE2148 /* libPods-KRVideoPlayer.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* KRVideoPlayer */ = {
+		BCA862791B10AD3200BD22DA = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* KRAppDelegate.h */,
-				6003F59D195388D20070C39A /* KRAppDelegate.m */,
-				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
-				6003F5A5195388D20070C39A /* KRViewController.h */,
-				6003F5A6195388D20070C39A /* KRViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
+				BCA862841B10AD3200BD22DA /* KRVideoPlayer */,
+				BCA862A11B10AD3200BD22DA /* KRVideoPlayerTests */,
+				BCA862831B10AD3200BD22DA /* Products */,
+				D42D89DDAE1953E334E54124 /* Pods */,
+				1799647DF909AB82D44C7418 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCA862831B10AD3200BD22DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA862821B10AD3200BD22DA /* KRVideoPlayer.app */,
+				BCA8629E1B10AD3200BD22DA /* KRVideoPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA862841B10AD3200BD22DA /* KRVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				BCA862891B10AD3200BD22DA /* AppDelegate.h */,
+				BCA8628A1B10AD3200BD22DA /* AppDelegate.m */,
+				BCA8628C1B10AD3200BD22DA /* FirstViewController.h */,
+				BCA8628D1B10AD3200BD22DA /* FirstViewController.m */,
+				BCA8628F1B10AD3200BD22DA /* SecondViewController.h */,
+				BCA862901B10AD3200BD22DA /* SecondViewController.m */,
+				BCA862921B10AD3200BD22DA /* Main.storyboard */,
+				BCA862951B10AD3200BD22DA /* Images.xcassets */,
+				BCA862971B10AD3200BD22DA /* LaunchScreen.xib */,
+				BCA862851B10AD3200BD22DA /* Supporting Files */,
 			);
 			path = KRVideoPlayer;
 			sourceTree = "<group>";
 		};
-		6003F594195388D20070C39A /* Supporting Files */ = {
+		BCA862851B10AD3200BD22DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* KRVideoPlayer-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* KRVideoPlayer-Prefix.pch */,
+				BCA862B01B10B5E400BD22DA /* 150511_JiveBike.mov */,
+				BCA862861B10AD3200BD22DA /* Info.plist */,
+				BCA862871B10AD3200BD22DA /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6003F5B5195388D20070C39A /* Tests */ = {
+		BCA862A11B10AD3200BD22DA /* KRVideoPlayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
-				6003F5B6195388D20070C39A /* Supporting Files */,
+				BCA862A41B10AD3200BD22DA /* KRVideoPlayerTests.m */,
+				BCA862A21B10AD3200BD22DA /* Supporting Files */,
 			);
-			path = Tests;
+			path = KRVideoPlayerTests;
 			sourceTree = "<group>";
 		};
-		6003F5B6195388D20070C39A /* Supporting Files */ = {
+		BCA862A21B10AD3200BD22DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5B7195388D20070C39A /* Tests-Info.plist */,
-				6003F5B8195388D20070C39A /* InfoPlist.strings */,
-				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+				BCA862A31B10AD3200BD22DA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+		D42D89DDAE1953E334E54124 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9ECD9D2BA9339F771217E9FB /* KRVideoPlayer.podspec */,
-				72F8942C7075D5F5FB774439 /* README.md */,
-				609A4FD0C3EA034752EC92A8 /* LICENSE */,
+				D109D543FF0ECF3DF7461A5E /* Pods-KRVideoPlayer.debug.xcconfig */,
+				9F5327FC750A6111E57068D1 /* Pods-KRVideoPlayer.release.xcconfig */,
 			);
-			name = "Podspec Metadata";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* KRVideoPlayer */ = {
+		BCA862811B10AD3200BD22DA /* KRVideoPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "KRVideoPlayer" */;
+			buildConfigurationList = BCA862A81B10AD3200BD22DA /* Build configuration list for PBXNativeTarget "KRVideoPlayer" */;
 			buildPhases = (
-				6003F586195388D20070C39A /* Sources */,
-				6003F587195388D20070C39A /* Frameworks */,
-				6003F588195388D20070C39A /* Resources */,
+				70FA2A06CE47FC373D3AAFF6 /* Check Pods Manifest.lock */,
+				BCA8627E1B10AD3200BD22DA /* Sources */,
+				BCA8627F1B10AD3200BD22DA /* Frameworks */,
+				BCA862801B10AD3200BD22DA /* Resources */,
+				2157740AC0A4CDF3182191E7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,43 +170,46 @@
 			);
 			name = KRVideoPlayer;
 			productName = KRVideoPlayer;
-			productReference = 6003F58A195388D20070C39A /* KRVideoPlayer.app */;
+			productReference = BCA862821B10AD3200BD22DA /* KRVideoPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* Tests */ = {
+		BCA8629D1B10AD3200BD22DA /* KRVideoPlayerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = BCA862AB1B10AD3200BD22DA /* Build configuration list for PBXNativeTarget "KRVideoPlayerTests" */;
 			buildPhases = (
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
+				BCA8629A1B10AD3200BD22DA /* Sources */,
+				BCA8629B1B10AD3200BD22DA /* Frameworks */,
+				BCA8629C1B10AD3200BD22DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+				BCA862A01B10AD3200BD22DA /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = KRVideoPlayerTests;
 			productName = KRVideoPlayerTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = BCA8629E1B10AD3200BD22DA /* KRVideoPlayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6003F582195388D10070C39A /* Project object */ = {
+		BCA8627A1B10AD3200BD22DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = KR;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = aidenluo;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = 36kr;
 				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
+					BCA862811B10AD3200BD22DA = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					BCA8629D1B10AD3200BD22DA = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = BCA862811B10AD3200BD22DA;
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = BCA8627D1B10AD3200BD22DA /* Build configuration list for PBXProject "KRVideoPlayer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,105 +217,122 @@
 				en,
 				Base,
 			);
-			mainGroup = 6003F581195388D10070C39A;
-			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			mainGroup = BCA862791B10AD3200BD22DA;
+			productRefGroup = BCA862831B10AD3200BD22DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* KRVideoPlayer */,
-				6003F5AD195388D20070C39A /* Tests */,
+				BCA862811B10AD3200BD22DA /* KRVideoPlayer */,
+				BCA8629D1B10AD3200BD22DA /* KRVideoPlayerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6003F588195388D20070C39A /* Resources */ = {
+		BCA862801B10AD3200BD22DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				BCA862B11B10B5E400BD22DA /* 150511_JiveBike.mov in Resources */,
+				BCA862941B10AD3200BD22DA /* Main.storyboard in Resources */,
+				BCA862991B10AD3200BD22DA /* LaunchScreen.xib in Resources */,
+				BCA862961B10AD3200BD22DA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AC195388D20070C39A /* Resources */ = {
+		BCA8629C1B10AD3200BD22DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2157740AC0A4CDF3182191E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KRVideoPlayer/Pods-KRVideoPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FA2A06CE47FC373D3AAFF6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		6003F586195388D20070C39A /* Sources */ = {
+		BCA8627E1B10AD3200BD22DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* KRAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* KRViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
+				BCA862911B10AD3200BD22DA /* SecondViewController.m in Sources */,
+				BCA8628B1B10AD3200BD22DA /* AppDelegate.m in Sources */,
+				BCA8628E1B10AD3200BD22DA /* FirstViewController.m in Sources */,
+				BCA862881B10AD3200BD22DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AA195388D20070C39A /* Sources */ = {
+		BCA8629A1B10AD3200BD22DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				BCA862A51B10AD3200BD22DA /* KRVideoPlayerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+		BCA862A01B10AD3200BD22DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* KRVideoPlayer */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+			target = BCA862811B10AD3200BD22DA /* KRVideoPlayer */;
+			targetProxy = BCA8629F1B10AD3200BD22DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+		BCA862921B10AD3200BD22DA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F597195388D20070C39A /* en */,
+				BCA862931B10AD3200BD22DA /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6003F59F195388D20070C39A /* Main_iPhone.storyboard */ = {
+		BCA862971B10AD3200BD22DA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F5A0195388D20070C39A /* Base */,
+				BCA862981B10AD3200BD22DA /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6003F5A2195388D20070C39A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A3195388D20070C39A /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5B9195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6003F5BD195388D20070C39A /* Debug */ = {
+		BCA862A61B10AD3200BD22DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,11 +347,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -362,14 +368,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6003F5BE195388D20070C39A /* Release */ = {
+		BCA862A71B10AD3200BD22DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -384,121 +391,118 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		6003F5C0195388D20070C39A /* Debug */ = {
+		BCA862A91B10AD3200BD22DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D109D543FF0ECF3DF7461A5E /* Pods-KRVideoPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KRVideoPlayer/KRVideoPlayer-Prefix.pch";
-				INFOPLIST_FILE = "KRVideoPlayer/KRVideoPlayer-Info.plist";
+				INFOPLIST_FILE = KRVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		6003F5C1195388D20070C39A /* Release */ = {
+		BCA862AA1B10AD3200BD22DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F5327FC750A6111E57068D1 /* Pods-KRVideoPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KRVideoPlayer/KRVideoPlayer-Prefix.pch";
-				INFOPLIST_FILE = "KRVideoPlayer/KRVideoPlayer-Info.plist";
+				INFOPLIST_FILE = KRVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		6003F5C3195388D20070C39A /* Debug */ = {
+		BCA862AC1B10AD3200BD22DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KRVideoPlayer.app/KRVideoPlayer";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INFOPLIST_FILE = KRVideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRVideoPlayer.app/KRVideoPlayer";
 			};
 			name = Debug;
 		};
-		6003F5C4195388D20070C39A /* Release */ = {
+		BCA862AD1B10AD3200BD22DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KRVideoPlayer.app/KRVideoPlayer";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INFOPLIST_FILE = KRVideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRVideoPlayer.app/KRVideoPlayer";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */ = {
+		BCA8627D1B10AD3200BD22DA /* Build configuration list for PBXProject "KRVideoPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5BD195388D20070C39A /* Debug */,
-				6003F5BE195388D20070C39A /* Release */,
+				BCA862A61B10AD3200BD22DA /* Debug */,
+				BCA862A71B10AD3200BD22DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "KRVideoPlayer" */ = {
+		BCA862A81B10AD3200BD22DA /* Build configuration list for PBXNativeTarget "KRVideoPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5C0195388D20070C39A /* Debug */,
-				6003F5C1195388D20070C39A /* Release */,
+				BCA862A91B10AD3200BD22DA /* Debug */,
+				BCA862AA1B10AD3200BD22DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		BCA862AB1B10AD3200BD22DA /* Build configuration list for PBXNativeTarget "KRVideoPlayerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5C3195388D20070C39A /* Debug */,
-				6003F5C4195388D20070C39A /* Release */,
+				BCA862AC1B10AD3200BD22DA /* Debug */,
+				BCA862AD1B10AD3200BD22DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6003F582195388D10070C39A /* Project object */;
+	rootObject = BCA8627A1B10AD3200BD22DA /* Project object */;
 }

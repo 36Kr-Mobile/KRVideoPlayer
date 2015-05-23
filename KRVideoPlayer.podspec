@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
                        * Don't worry about the indent, we strip it!
                        DESC
   s.homepage         = "https://github.com/36Kr-Mobile/KRVideoPlayer"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "aidenluo" => "luoqi@36kr.com" }
   s.source           = { :git => "https://github.com/36Kr-Mobile/KRVideoPlayer.git ", :tag => s.version.to_s }
@@ -31,8 +30,6 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'KRVideoPlayer' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'MediaPlayer'
 end

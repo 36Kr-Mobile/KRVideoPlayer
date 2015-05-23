@@ -1,0 +1,1 @@
+PODS_KRVIDEOPLAYER_KRVIDEOPLAYER_OTHER_LDFLAGS = -framework "MediaPlayer" -framework "UIKit"

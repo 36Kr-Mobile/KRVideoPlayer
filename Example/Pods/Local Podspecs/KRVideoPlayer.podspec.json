@@ -1,0 +1,31 @@
+{
+  "name": "KRVideoPlayer",
+  "version": "0.1.0",
+  "summary": "A simple video player like weico",
+  "description": "                       An optional longer description of KRVideoPlayer\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/36Kr-Mobile/KRVideoPlayer",
+  "license": "MIT",
+  "authors": {
+    "aidenluo": "luoqi@36kr.com"
+  },
+  "source": {
+    "git": "https://github.com/36Kr-Mobile/KRVideoPlayer.git ",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "http://weibo.com/1840543654/profile",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "KRVideoPlayer": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "MediaPlayer"
+  ]
+}
