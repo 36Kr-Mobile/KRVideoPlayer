@@ -9,4 +9,4 @@ language: objective-c
 script:
 # - set -o pipefail && xcodebuild test -workspace Example/KRVideoPlayer.xcworkspace -scheme KRVideoPlayer -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
-- xctool -workspace Example/KRVideoPlayer.xcworkspace -scheme KRVideoPlayer build
+- xctool -workspace Example/KRVideoPlayer.xcworkspace -scheme KRVideoPlayer -sdk iphonesimulator build
