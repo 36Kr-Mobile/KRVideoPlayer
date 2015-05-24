@@ -10,7 +10,6 @@
 #import "KRVideoPlayerControlView.h"
 
 static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
-static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 3.0;
 
 @interface KRVideoPlayerController ()
 
@@ -107,11 +106,11 @@ static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 3.0;
     [self.videoControl.closeButton addTarget:self action:@selector(closeButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.videoControl.fullScreenButton addTarget:self action:@selector(fullScreenButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.videoControl.shrinkScreenButton addTarget:self action:@selector(shrinkScreenButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.videoControl.progressSlider addTarget:self action:@selector(durationSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
-    [self.videoControl.progressSlider addTarget:self action:@selector(durationSliderTouchBegan:) forControlEvents:UIControlEventTouchDown];
-    [self.videoControl.progressSlider addTarget:self action:@selector(durationSliderTouchEnded:) forControlEvents:UIControlEventTouchUpInside];
-    [self.videoControl.progressSlider addTarget:self action:@selector(durationSliderTouchEnded:) forControlEvents:UIControlEventTouchUpOutside];
-    [self setDurationSliderMaxMinValues];
+    [self.videoControl.progressSlider addTarget:self action:@selector(progressSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.videoControl.progressSlider addTarget:self action:@selector(progressSliderTouchBegan:) forControlEvents:UIControlEventTouchDown];
+    [self.videoControl.progressSlider addTarget:self action:@selector(progressSliderTouchEnded:) forControlEvents:UIControlEventTouchUpInside];
+    [self.videoControl.progressSlider addTarget:self action:@selector(progressSliderTouchEnded:) forControlEvents:UIControlEventTouchUpOutside];
+    [self setProgressSliderMaxMinValues];
     [self monitorVideoPlayback];
 }
 
@@ -121,9 +120,8 @@ static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 3.0;
         self.videoControl.pauseButton.hidden = NO;
         self.videoControl.playButton.hidden = YES;
         [self startDurationTimer];
-        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(fadeDismissControl) object:nil];
-        [self performSelector:@selector(fadeDismissControl) withObject:nil afterDelay:kVideoControlBarAutoFadeOutTimeinterval];
         [self.videoControl.indicatorView stopAnimating];
+        [self.videoControl autoFadeOutControlBar];
     } else {
         self.videoControl.pauseButton.hidden = YES;
         self.videoControl.playButton.hidden = NO;
@@ -148,7 +146,7 @@ static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 3.0;
 
 - (void)onMPMovieDurationAvailableNotification
 {
-    [self setDurationSliderMaxMinValues];
+    [self setProgressSliderMaxMinValues];
 }
 
 - (void)playButtonClick
@@ -204,22 +202,24 @@ static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 3.0;
     }];
 }
 
-- (void)setDurationSliderMaxMinValues {
+- (void)setProgressSliderMaxMinValues {
     CGFloat duration = self.duration;
     self.videoControl.progressSlider.minimumValue = 0.f;
     self.videoControl.progressSlider.maximumValue = duration;
 }
 
-- (void)durationSliderTouchBegan:(UISlider *)slider {
+- (void)progressSliderTouchBegan:(UISlider *)slider {
     [self pause];
+    [self.videoControl cancelAutoFadeOutControlBar];
 }
 
-- (void)durationSliderTouchEnded:(UISlider *)slider {
+- (void)progressSliderTouchEnded:(UISlider *)slider {
     [self setCurrentPlaybackTime:floor(slider.value)];
     [self play];
+    [self.videoControl autoFadeOutControlBar];
 }
 
-- (void)durationSliderValueChanged:(UISlider *)slider {
+- (void)progressSliderValueChanged:(UISlider *)slider {
     double currentTime = floor(slider.value);
     double totalTime = floor(self.duration);
     [self setTimeLabelValues:currentTime totalTime:totalTime];

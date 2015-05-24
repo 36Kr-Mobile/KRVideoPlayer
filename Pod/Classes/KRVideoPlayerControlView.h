@@ -23,5 +23,7 @@
 
 - (void)animateHide;
 - (void)animateShow;
+- (void)autoFadeOutControlBar;
+- (void)cancelAutoFadeOutControlBar;
 
 @end

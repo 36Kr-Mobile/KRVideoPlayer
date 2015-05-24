@@ -11,6 +11,7 @@
 static const CGFloat kVideoControlBarHeight = 40.0;
 static const CGFloat kVideoControlAnimationTimeinterval = 0.3;
 static const CGFloat kVideoControlTimeLabelFontSize = 10.0;
+static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 5.0;
 
 @interface KRVideoPlayerControlView ()
 
@@ -97,7 +98,22 @@ static const CGFloat kVideoControlTimeLabelFontSize = 10.0;
         self.bottomBar.alpha = 1.0;
     } completion:^(BOOL finished) {
         self.isBarShowing = YES;
+        [self autoFadeOutControlBar];
     }];
+}
+
+- (void)autoFadeOutControlBar
+{
+    if (!self.isBarShowing) {
+        return;
+    }
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(animateHide) object:nil];
+    [self performSelector:@selector(animateHide) withObject:nil afterDelay:kVideoControlBarAutoFadeOutTimeinterval];
+}
+
+- (void)cancelAutoFadeOutControlBar
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(animateHide) object:nil];
 }
 
 - (void)onTap:(UITapGestureRecognizer *)gesture
