@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'KRVideoPlayer', :exclusive => true do
-  pod "KRVideoPlayer"
+  pod "KRVideoPlayer", :path => '../'
 end
 

@@ -1,1 +1,1 @@
-../../../KRVideoPlayer/Pod/Classes/KRVideoPlayerControlView.h
+../../../../../Pod/Classes/KRVideoPlayerControlView.h
