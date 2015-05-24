@@ -8,7 +8,7 @@
 
 // KRVideoPlayer
 #define COCOAPODS_POD_AVAILABLE_KRVideoPlayer
-#define COCOAPODS_VERSION_MAJOR_KRVideoPlayer 0
-#define COCOAPODS_VERSION_MINOR_KRVideoPlayer 1
+#define COCOAPODS_VERSION_MAJOR_KRVideoPlayer 1
+#define COCOAPODS_VERSION_MINOR_KRVideoPlayer 0
 #define COCOAPODS_VERSION_PATCH_KRVideoPlayer 0
 

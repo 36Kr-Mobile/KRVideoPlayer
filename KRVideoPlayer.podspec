@@ -9,13 +9,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "KRVideoPlayer"
-  s.version          = "0.1.0"
+  s.version          = "1.0"
   s.summary          = "A simple video player like weico"
   s.description      = <<-DESC
-                       An optional longer description of KRVideoPlayer
+                       A video player like weico.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       ![screenshot](kr_player.gif)
+
+
                        DESC
   s.homepage         = "https://github.com/36Kr-Mobile/KRVideoPlayer"
   s.license          = 'MIT'
