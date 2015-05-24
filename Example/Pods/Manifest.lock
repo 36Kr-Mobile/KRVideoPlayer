@@ -2,13 +2,9 @@ PODS:
   - KRVideoPlayer (1.0)
 
 DEPENDENCIES:
-  - KRVideoPlayer (from `../`)
-
-EXTERNAL SOURCES:
-  KRVideoPlayer:
-    :path: ../
+  - KRVideoPlayer
 
 SPEC CHECKSUMS:
-  KRVideoPlayer: f741642885f71531fe889e4f6e1d6bd4d9c3648b
+  KRVideoPlayer: a2bbf25dd9ab84f5774897068998662574678429
 
 COCOAPODS: 0.37.1
