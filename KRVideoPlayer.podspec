@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/36Kr-Mobile/KRVideoPlayer"
   s.license          = 'MIT'
   s.author           = { "aidenluo" => "luoqi@36kr.com" }
-  s.source           = { :git => "https://github.com/36Kr-Mobile/KRVideoPlayer.git ", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/36Kr-Mobile/KRVideoPlayer.git", :tag => s.version.to_s }
   s.social_media_url = 'http://weibo.com/1840543654/profile'
 
   s.platform     = :ios, '6.0'
