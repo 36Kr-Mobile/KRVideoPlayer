@@ -13,6 +13,24 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+Create player and set frame:
+
+```
+self.videoController = [[KRVideoPlayerController alloc] initWithFrame:CGRectMake(0, 0, width, width*(9.0/16.0))];
+```
+
+Set video path:
+
+```
+self.videoController.contentURL = url;
+```
+
+Show it:
+
+```
+[self.videoController showInWindow];
+```
+
 ## Requirements
 
 `iOS >= 6.0`
