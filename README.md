@@ -46,7 +46,9 @@ pod "KRVideoPlayer"
 
 ## Author
 
-[aidenluo](http://weibo.com/1840543654/profile)
+Programing by [aidenluo](http://weibo.com/1840543654)
+
+Design by [cheyi](http://weibo.com/322160605)
 
 ## License
 
