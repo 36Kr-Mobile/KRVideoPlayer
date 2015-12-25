@@ -72,6 +72,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
 
 - (void)dismiss
 {
+    [self stop];
     [self stopDurationTimer];
     [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeinterval animations:^{
         self.view.alpha = 0.0;
