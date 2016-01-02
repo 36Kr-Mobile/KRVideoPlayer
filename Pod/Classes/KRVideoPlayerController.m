@@ -206,7 +206,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
 - (void)setProgressSliderMaxMinValues {
     CGFloat duration = self.duration;
     self.videoControl.progressSlider.minimumValue = 0.f;
-    self.videoControl.progressSlider.maximumValue = duration;
+    self.videoControl.progressSlider.maximumValue = floor(duration);
 }
 
 - (void)progressSliderTouchBegan:(UISlider *)slider {
