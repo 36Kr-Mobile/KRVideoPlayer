@@ -52,7 +52,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
     [self play];
 }
 
-#pragma mark - Publick Method
+#pragma mark - Public Method
 
 - (void)showInWindow
 {
