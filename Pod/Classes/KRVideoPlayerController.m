@@ -9,7 +9,7 @@
 #import "KRVideoPlayerController.h"
 #import "KRVideoPlayerControlView.h"
 
-static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
+static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
 
 @interface KRVideoPlayerController ()
 
@@ -62,7 +62,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
     }
     [keyWindow addSubview:self.view];
     self.view.alpha = 0.0;
-    [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeinterval animations:^{
+    [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeInterval animations:^{
         self.view.alpha = 1.0;
     } completion:^(BOOL finished) {
         
@@ -74,7 +74,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
 {
     [self stopDurationTimer];
     [self stop];
-    [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeinterval animations:^{
+    [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeInterval animations:^{
         self.view.alpha = 0.0;
     } completion:^(BOOL finished) {
         [self.view removeFromSuperview];

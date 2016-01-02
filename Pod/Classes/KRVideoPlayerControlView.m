@@ -9,9 +9,9 @@
 #import "KRVideoPlayerControlView.h"
 
 static const CGFloat kVideoControlBarHeight = 40.0;
-static const CGFloat kVideoControlAnimationTimeinterval = 0.3;
+static const CGFloat kVideoControlAnimationTimeInterval = 0.3;
 static const CGFloat kVideoControlTimeLabelFontSize = 10.0;
-static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 5.0;
+static const CGFloat kVideoControlBarAutoFadeOutTimeInterval = 5.0;
 
 @interface KRVideoPlayerControlView ()
 
@@ -80,7 +80,7 @@ static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 5.0;
     if (!self.isBarShowing) {
         return;
     }
-    [UIView animateWithDuration:kVideoControlAnimationTimeinterval animations:^{
+    [UIView animateWithDuration:kVideoControlAnimationTimeInterval animations:^{
         self.topBar.alpha = 0.0;
         self.bottomBar.alpha = 0.0;
     } completion:^(BOOL finished) {
@@ -93,7 +93,7 @@ static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 5.0;
     if (self.isBarShowing) {
         return;
     }
-    [UIView animateWithDuration:kVideoControlAnimationTimeinterval animations:^{
+    [UIView animateWithDuration:kVideoControlAnimationTimeInterval animations:^{
         self.topBar.alpha = 1.0;
         self.bottomBar.alpha = 1.0;
     } completion:^(BOOL finished) {
@@ -108,7 +108,7 @@ static const CGFloat kVideoControlBarAutoFadeOutTimeinterval = 5.0;
         return;
     }
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(animateHide) object:nil];
-    [self performSelector:@selector(animateHide) withObject:nil afterDelay:kVideoControlBarAutoFadeOutTimeinterval];
+    [self performSelector:@selector(animateHide) withObject:nil afterDelay:kVideoControlBarAutoFadeOutTimeInterval];
 }
 
 - (void)cancelAutoFadeOutControlBar
