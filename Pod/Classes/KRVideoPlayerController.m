@@ -9,7 +9,7 @@
 #import "KRVideoPlayerController.h"
 #import "KRVideoPlayerControlView.h"
 
-static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
+static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
 
 @interface KRVideoPlayerController ()
 
@@ -52,7 +52,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
     [self play];
 }
 
-#pragma mark - Publick Method
+#pragma mark - Public Method
 
 - (void)showInWindow
 {
@@ -62,7 +62,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
     }
     [keyWindow addSubview:self.view];
     self.view.alpha = 0.0;
-    [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeinterval animations:^{
+    [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeInterval animations:^{
         self.view.alpha = 1.0;
     } completion:^(BOOL finished) {
         
@@ -74,7 +74,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
 {
     [self stopDurationTimer];
     [self stop];
-    [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeinterval animations:^{
+    [UIView animateWithDuration:kVideoPlayerControllerAnimationTimeInterval animations:^{
         self.view.alpha = 0.0;
     } completion:^(BOOL finished) {
         [self.view removeFromSuperview];
@@ -206,7 +206,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
 - (void)setProgressSliderMaxMinValues {
     CGFloat duration = self.duration;
     self.videoControl.progressSlider.minimumValue = 0.f;
-    self.videoControl.progressSlider.maximumValue = duration;
+    self.videoControl.progressSlider.maximumValue = floor(duration);
 }
 
 - (void)progressSliderTouchBegan:(UISlider *)slider {
