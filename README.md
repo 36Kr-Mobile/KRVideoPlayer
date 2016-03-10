@@ -53,7 +53,3 @@ Design by [cheyi](http://weibo.com/322160605)
 ## License
 
 KRVideoPlayer is available under the MIT license. See the LICENSE file for more info.
-
-## 广告
-
-36氪招iOS工程师，简历请发送至luoqi###36kr.com(###替换为@)
