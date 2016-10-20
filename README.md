@@ -9,6 +9,10 @@
 
 ![screenshot](kr_player.gif)
 
+## Notice
+
+This project hasn's been maintained
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -33,7 +37,8 @@ Show it:
 
 ## Requirements
 
-`iOS >= 6.0`
+`iOS >= 6.0 <= 8.0`
+
 
 ## Installation
 
